@@ -10,7 +10,7 @@ resource "aws_instance" "EC2-server" {
     ManagedBy   = var.managed_by
   }
 
-  user_data = file("jenkins.sh")  # Path to your Jenkins setup script (optional)
+  user_data = file("sonarqube.sh")  # Path to your Jenkins setup script (optional)
 }
 
 # TLS Private Key Generation
